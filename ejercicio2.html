@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 2- Contar los caracteres escritos en un textarea</title>
+  </head>
+  <body>
+    <h1>Contar los caracteres escritos en un textarea</h1>
+
+    <form action="#" method="post">
+      <p>
+        Texto:
+        <br />
+        <textarea
+          cols="40"
+          rows="5"
+          name="texto"
+          id="textareaCaracteres"
+        ></textarea>
+      </p>
+      <p>Has escrito <span id="contadorCaracteres"></span> caracteres.</p>
+    </form>
+
+    <script>
+      function contarCaracteres(textareaElement, contadorElement) {
+        contadorElement.innerText = textareaElement.value.length;
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        let contadorCaracteres = document.getElementById("contadorCaracteres");
+        let textareaCaracteres = document.getElementById("textareaCaracteres");
+
+        textareaCaracteres.addEventListener("input", function () {
+          contarCaracteres(textareaCaracteres, contadorCaracteres);
+        });
+      });
+    </script>
+  </body>
+</html>

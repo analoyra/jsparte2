@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo.css" />
+    <title>Ejercicio 1 - Cambiar colores</title>
+  </head>
+  <body>
+    <div id="caja1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+      doloribus dignissimos nesciunt quia fugiat exercitationem nemo sint nam
+      quasi est fugit, possimus dolores ad! Sapiente architecto quibusdam libero
+      quia necessitatibus.
+    </div>
+    <div id="caja2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+      doloribus dignissimos nesciunt quia fugiat exercitationem nemo sint nam
+      quasi est fugit, possimus dolores ad! Sapiente architecto quibusdam libero
+      quia necessitatibus.
+    </div>
+    <div id="caja3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+      doloribus dignissimos nesciunt quia fugiat exercitationem nemo sint nam
+      quasi est fugit, possimus dolores ad! Sapiente architecto quibusdam libero
+      quia necessitatibus.
+    </div>
+    <script>
+        const color1 = document.getElementById("caja1");
+        color1.addEventListener("click",()=>{
+
+            color1.style.background="green";
+        });
+        const color2 = document.getElementById("caja2");
+        color2.addEventListener("click",()=>{
+
+            color2.style.background="blue";
+        });
+        const color3 = document.getElementById("caja3");
+        color3.addEventListener("click",()=>{
+
+            color3.style.background="yellow";
+        });
+        
+    </script>
+  </body>
+</html>
